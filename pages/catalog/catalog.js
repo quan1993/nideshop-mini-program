@@ -20,7 +20,9 @@ Page({
     wx.showLoading({
       title: '加载中...',
     });
+    console.log("request ", api.categoryList)
     util.request(api.CatalogList).then(function (res) {
+        console.log(res)
         that.setData({
           navList: res.data.categoryList,
           currentCategory: res.data.currentCategory

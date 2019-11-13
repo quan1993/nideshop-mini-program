@@ -32,10 +32,10 @@ function request(url, data = {}, method = "GET") {
         'X-Nideshop-Token': wx.getStorageSync('token')
       },
       success: function (res) {
-        console.log("success");
+        console.log("success: url : " + url + "    statusCode : " + res.statusCode + "  res.data.errno ： " + res.data.errno);
 
         if (res.statusCode == 200) {
-
+          console.log("res.data.errno  " + res.data.errno + "   res.data : " + res.data)
           if (res.data.errno == 401) {
             //需要登录后才可以操作
 
