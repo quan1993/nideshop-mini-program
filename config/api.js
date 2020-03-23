@@ -1,4 +1,4 @@
-const ApiRootUrl = 'http://www.laozhugu.xyz:8360/api/';
+const ApiRootUrl = 'https://www.laozhugu.xyz:8360/api/';
 
 module.exports = {
   IndexUrl: ApiRootUrl + 'index/index', //首页数据接口
