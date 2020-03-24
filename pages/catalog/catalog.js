@@ -29,11 +29,11 @@ Page({
         });
         wx.hideLoading();
       });
-    util.request(api.GoodsCount).then(function (res) {
-      that.setData({
-        goodsCount: res.data.goodsCount
-      });
-    });
+    // util.request(api.GoodsCount).then(function (res) {
+    //   that.setData({
+    //     goodsCount: res.data.goodsCount
+    //   });
+    // });
 
   },
   getCurrentCategory: function (id) {
