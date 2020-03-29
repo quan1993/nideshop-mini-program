@@ -9,6 +9,7 @@
   </view>
 
   <view class="user-menu">
+  <!--
     <view class="item">
       <navigator url="/pages/ucenter/order/order" class="a">
         <text class="icon order"></text>
@@ -63,6 +64,7 @@
         <text class="txt">联系客服</text>
       </navigator>
     </view>
+    -->
     <view class="item item-bottom">
       <navigator url="url" class="a">
         <text class="icon help"></text>
