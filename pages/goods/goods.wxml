@@ -13,7 +13,7 @@
     <view class="c">
       <text class="name">{{goods.name}}</text>
       <text class="desc">{{goods.goods_brief}}</text>
-      <text class="price">￥{{goods.retail_price}}</text>
+      <text class="price">{{goods.retail_price == 0 ? "" : "￥ " + goods.retail_price}}</text>
       <view class="brand" wx:if="{{brand.name}}">
         <navigator url="../brandDetail/brandDetail?id={{brand.brandId}}">
           <text>{{brand.name}}</text>
@@ -21,10 +21,12 @@
       </view>
     </view>
   </view>
+  <!--
   <view class="section-nav section-attr" bindtap="switchAttrPop">
     <view class="t">请选择规格数量</view>
     <image class="i" src="../../static/images/address_right.png" background-size="cover"></image>
   </view>
+  -->
   <!--<view class="section-nav section-act">
       <view class="t">
         <view class="label">1个促销:</view>
@@ -60,7 +62,7 @@
     </view>
   </view>
   <view class="goods-attr">
-    <view class="t">商品参数</view>
+    <view class="t">详情</view>
     <view class="l">
       <view class="item" wx:for="{{attribute}}" wx:key="{{item.name}}">
         <text class="left">{{item.name}}</text>
@@ -103,7 +105,7 @@
         <navigator url="/pages/goods/goods?id={{item.id}}">
           <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
           <text class="name">{{item.name}}</text>
-          <text class="price">￥{{item.retail_price}}</text>
+          <text class="price">{{item.retail_price == 0 ? "" : "￥ " + item.retail_price}}</text>
         </navigator>
       </view>
     </view>
