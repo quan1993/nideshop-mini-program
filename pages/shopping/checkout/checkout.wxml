@@ -1,4 +1,5 @@
 <view class="container">
+<!--
     <view class="address-box">
         <view class="address-item" bindtap="selectAddress" wx:if="{{checkedAddress.id > 0}}">
             <view class="l">
@@ -82,4 +83,5 @@
         <view class="l">实付：￥{{actualPrice}}</view>
         <view class="r" bindtap="submitOrder">去付款</view>
     </view>
+    -->
 </view>
