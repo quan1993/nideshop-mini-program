@@ -24,6 +24,9 @@ Page({
   },
 
   getIndexData: function () {
+    wx.showLoading({
+      title: '加载中...',
+    });
     let that = this;
     util.request(api.IndexUrl).then(function (res) {
       if (res.errno === 0) {
@@ -37,6 +40,7 @@ Page({
           channel: res.data.channel
         });
       }
+      wx.hideLoading();
     });
   },
   onLoad: function (options) {
