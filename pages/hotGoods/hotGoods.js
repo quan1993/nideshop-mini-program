@@ -24,7 +24,7 @@ Page({
         that.setData({
           bannerInfo: res.data.bannerInfo,
         });
-        that.getGoodsList();
+
       }
     });
   },

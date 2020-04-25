@@ -1,19 +1,22 @@
 <!--index.wxml-->
 <view class="container">
 
-
+<!--
   <view class="m-menu">
     <navigator class="item" url="{{item.url}}" wx:for="{{channel}}" wx:key="{{item.id}}">
       <image src="{{item.icon_url}}" background-size="cover"></image>
       <text>{{item.name}}</text>
     </navigator>
   </view>
+  -->
   <view class="good-grid" wx:for="{{floorGoods}}" wx:key="{{item.id}}">
+    <!--
     <view class="h">
       <view>
         <text>{{item.name}}</text>
       </view>
     </view>
+    -->
     <view class="b">
       <block wx:for="{{item.goodsList}}" wx:for-index="iindex" wx:for-item="iitem" wx:key="{{iitem.id}}">
         <navigator url="../goods/goods?id={{iitem.id}}" class="item">
